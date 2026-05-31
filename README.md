@@ -112,14 +112,6 @@ Sepsis develops gradually — a rising heart rate trend over 12 hours predicts s
 
 **Data preparation:** All rows grouped by `Patient_ID`, sorted by `Hour`. Last **24 hours** form one sequence (shape: `24 timesteps × 11 features`). Patients with fewer than 24 hours are zero-padded. At patient level, class balance improves to 92.7% vs 7.3% (class weight 6.85×).
 
-### Model Comparison
-
-| Model | Gates | Parameters | Real-time? | Why |
-|---|---|---|---|---|
-| LSTM | 4 (forget, input, output, cell) | 32,417 | ✅ Yes | Processes past data only |
-| **GRU** | 2 (reset, update) | 24,737 | ✅ **Recommended** | Fastest, 24% fewer params |
-| Bi-LSTM | 4 × 2 directions | 81,185 | ❌ No | Needs future data to read backward |
-
 ### Gen 2 Results
 
 | Model | Accuracy | Precision | Recall | F1 | Train Time |
