@@ -9,11 +9,7 @@
 **22F-BSAI-28 | Deep Learning Assignment**
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rcs-gjkgWtfegeSnm2j9Fptj1GwbxWfE?usp=sharing)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
-![HuggingFace](https://img.shields.io/badge/🤗-ClinicalBERT-yellow)
-![Dataset](https://img.shields.io/badge/Dataset-PhysioNet%202019-green)
+
 
 ---
 
