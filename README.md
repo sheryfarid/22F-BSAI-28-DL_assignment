@@ -29,7 +29,6 @@ The pipeline progresses through three generations of increasing complexity, each
 | Gen 2 | LSTM / Bi-LSTM / GRU | Temporal trends over 24 hours |
 | Gen 3 | ClinicalBERT | Clinical language understanding |
 
-> **👉 [Click here to view the full notebook on Google Colab](https://colab.research.google.com/drive/1rcs-gjkgWtfegeSnm2j9Fptj1GwbxWfE?usp=sharing)**
 
 ---
 
@@ -242,51 +241,7 @@ jupyter notebook main_.ipynb
 
 Place `Dataset.csv` (PhysioNet Sepsis Challenge 2019, combined training sets A+B) in the same directory as the notebook. The preprocessing pipeline will auto-generate `Dataset_final.csv`.
 
----
 
-## 📁 Repository Structure
-
-```
-22F-BSAI-28-DL_assignment/
-│
-├── main_.ipynb                  # Full pipeline notebook
-├── report.pdf                   # Project report with analysis
-├── Dataset.csv                  # Raw PhysioNet data (not tracked)
-├── Dataset_final.csv            # Preprocessed data (generated)
-│
-├── outputs/
-│   ├── plot_class_distribution.png
-│   ├── plot_missing_values.png
-│   ├── plot_rf_importance.png
-│   ├── plot_correlation.png
-│   ├── gen1_training_history.png
-│   ├── gen1_confusion_matrices.png
-│   ├── gen2_training_history.png
-│   ├── gen2_confusion_matrices.png
-│   ├── gen3_training_history.png
-│   ├── gen3_confusion_matrices.png
-│   ├── gen3_attention_heatmap.png
-│   ├── final_recall_comparison.png
-│   ├── gen1_results.csv
-│   ├── gen2_results.csv
-│   ├── gen3_results.csv
-│   └── final_all_models_comparison.csv
-│
-└── README.md
-```
-
----
-
-## 📚 References
-
-- Reyna M. et al. — *Early Prediction of Sepsis from Clinical Data: PhysioNet Challenge 2019*
-- Hochreiter & Schmidhuber — *Long Short-Term Memory*, Neural Computation 1997
-- Cho et al. — *Learning Phrase Representations using RNN Encoder-Decoder*, 2014
-- Devlin et al. — *BERT: Pre-training of Deep Bidirectional Transformers*, 2019
-- Alsentzer et al. — *Publicly Available Clinical BERT Embeddings (Bio_ClinicalBERT)*, 2019
-- Singer et al. — *The Third International Consensus Definitions for Sepsis (Sepsis-3)*, JAMA 2016
-
----
 
 ## 👤 Author
 
